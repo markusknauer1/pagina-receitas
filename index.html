@@ -35,30 +35,31 @@
 
       body {
         display: flex;
-        justify-content: center; /* Centraliza horizontalmente */
         align-items: center; /* Centraliza verticalmente */
-        height: 100vh; /* Faz com que o corpo ocupe 100% da altura da viewport */
+        flex-direction: column;
         margin: 0; /* Remove margens padrão do body */
         background-color: #f2e6d8;
-        padding-top: 380px;
-        padding-bottom: 380px;
       }
       .cardReceita {
         width: 90%; /* Largura padrão do cartão, adaptável */
-        max-width: 550px; /* Largura máxima do cartão */
+        max-width: 400px; /* Largura máxima do cartão */
         height: auto; /* Altura automática para manter a proporção */
         background-color: #f0f0f0; /* Cor de fundo do cartão */
         display: flex;
         flex-direction: column; /* Alinha itens em coluna */
-        justify-content: center;
-        padding: 30px; /* Espaçamento interno */
+        padding: 20px; /* Espaçamento interno */
+        margin: 10%;
         border-radius: 25px; /* Bordas arredondadas */
-        border: 10px 10px rgba(0, 0, 0, 0.8);
+        border: 10px 10px solid rgba(0, 0, 0, 0.8);
+        position: relative;
+        gap: 15px;
       }
       .cardReceita img {
         max-width: 100%; /* Imagem responsiva */
         height: auto; /* Mantém a proporção da imagem */
         border-radius: 8px; /* Bordas arredondadas da imagem */
+        display: flex;
+        position: relative;
       }
       h1 {
         font-family: YoungSerif-Regular;
@@ -68,15 +69,19 @@
         font-family: YoungSerif-Regular;
         font-weight: 400;
         color: hsl(14, 45%, 36%);
+        font-size: 0.8rem;
       }
       h4 {
         font-family: Outfit-VariableFont_wght;
         color: hsl(332, 51%, 32%);
+        font-size: 0.8rem;
       }
       p {
         font-family: Outfit-VariableFont_wght;
         color: hsl(24, 5%, 18%);
         font-size: 0.8rem;
+        display: flex;
+        position: relative;
       }
       ul li {
         font-family: Outfit-VariableFont_wght;
@@ -84,13 +89,18 @@
         display: flex;
         align-items: center;
         font-size: 0.8rem;
+        display: flex;
+        position: relative;
       }
       .cardReceita p {
         gap: 10px;
         height: 35px;
         display: flex;
         align-items: center;
+        font-size: 0.8rem;
         left: 0;
+        display: flex;
+        position: relative;
       }
       .timePreparate {
         background-color: #fff7fc;
@@ -101,6 +111,7 @@
         padding-right: 30px;
         line-height: 20px;
         border-radius: 10px;
+        position: relative;
       }
       .Ingredients {
         height: auto;
@@ -142,7 +153,7 @@
       }
       .timePreparate ul li:before {
         content: "\2022";
-        margin: 0 2px;
+        margin: 0;
         font-size: 20px;
         color: hsl(332, 51%, 32%);
         padding-right: 10px;
@@ -198,7 +209,7 @@
         font-weight: 400;
         width: 100%;
         bottom: 0;
-        font-size: 1rem;
+        font-size: 12px;
       }
 
     </style>
